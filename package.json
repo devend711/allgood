@@ -13,7 +13,8 @@
   "keywords": [
     "node",
     "model",
-    "validation"
+    "validation",
+    "json"
   ],
   "author": "Deven Dayal",
   "license": "MIT",
