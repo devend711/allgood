@@ -1,6 +1,6 @@
 {
   "name": "allgood",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Super lightweight JSON model validation for node.js",
   "main": "index.js",
   "scripts": {
@@ -16,12 +16,13 @@
     "validation"
   ],
   "author": "Deven Dayal",
-  "license": "BSD",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/devend711/allgood/issues"
   },
   "devDependencies": {
     "mocha": "~2.0.1",
-    "chai": "~1.10.0"
+    "chai": "~1.10.0",
+    "Set": "~0.4.1"
   }
 }
