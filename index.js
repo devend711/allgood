@@ -11,7 +11,6 @@ module.exports = {
 	}
 };
 
-
 // loop through an array of keys, return false if any of them don't exist
 function allKeysPresent(schema, json) {
 	var anyMissing = Object.keys(schema).some(function(key) {
