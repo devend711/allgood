@@ -39,7 +39,7 @@ Get an error message, the exact missing keys, and the keys with incorrect types.
 		error = problems(personSchema, newPerson);
 		console.log(error.message);
 		console.log('Missing ' + error.missingKeys);
-		console.log('Wrong type for ' + error.incorrectKeyValues);
+		console.log('Wrong type for ' + error.incorrectKeys);
 	}
 	
 
