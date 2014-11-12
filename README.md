@@ -27,7 +27,7 @@ The keys in the schema are the keys you expect to find in the test object, and t
 
 ### Check why a model is invalid
 
-Get an error message, the exact missing keys, or keys with incorrect types.
+Get an error message, the exact missing keys, and the keys with incorrect types.
 	
 	problems = allgood.problems;
 
