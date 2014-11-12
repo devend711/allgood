@@ -12,7 +12,9 @@ module.exports = {
 
 	problems: function(schema, json) {
 		var missing = missingKeys(schema, json);
-		var incorrect = incorrectKeyValues(schema, json);
+		var incorrect = incorrectKeyValues(schema, json).filter( function(item) {
+		  return missing.indexOf(item) < 0; // keys that are missing should not be labeled as incorrect
+		});
 		var message = [];
 		if (missing.length > 0) {
 			message.push("Missing keys: [" + missing.join(", ") + ']');
@@ -63,3 +65,5 @@ function incorrectKeyValues(schema, json) {
 	}
 	return incorrect;
 }
+
+// other functions

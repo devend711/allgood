@@ -26,7 +26,7 @@ The keys in the schema are the keys you expect to find in the test object, and t
 
 ### Find errors in module
 
-Helpful feedback about the problems with an invalid module.
+Helpful feedback string about the problems with an invalid module.
 	
 	problems = allgood.problems;
 
