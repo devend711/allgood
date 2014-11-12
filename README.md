@@ -36,7 +36,7 @@ Get an error message, the exact missing keys, and the keys with incorrect types.
 	if (valid(personSchema, newPerson)) {
 		console.log("You're a wizard, Ron");
 	} else {
-		error = problems(personSchema, newPerson); // contains 'message', 'missingKeys', 'incorrectKeyValues'
+		error = problems(personSchema, newPerson);
 		console.log(error.message);
 		console.log('Missing ' + error.missingKeys);
 		console.log('Wrong type for ' + error.incorrectKeyValues);
