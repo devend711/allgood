@@ -11,7 +11,7 @@ Super lightweight JSON model validation for node.js
 
 ### Validate a model
 
-A validation consists of a JSON object to test and a JSON schema, a definition of the model.
+A validation consists of a JSON object to test and a JSON schema (a definition of the model).
 
 The keys in the schema are the keys you expect to find in the test object, and the values of the schema are the expected types of the test object's corresponding values.
 
@@ -20,6 +20,7 @@ The keys in the schema are the keys you expect to find in the test object, and t
 
 	var personSchema = {"name":"string", "age":"number"};
 	var newPerson = {name:"Harry Potter", "age":11};
+
 	if (valid(personSchema, newPerson)) {
 		console.log("You're a wizard, Harry");
 	}
@@ -31,6 +32,7 @@ Helpful feedback string about the problems with an invalid model.
 	problems = allgood.problems;
 
 	var newPerson = {name:"Ron Weasley"};
+	
 	if (valid(personSchema, newPerson)) {
 		console.log("You're a wizard, Ron");
 	} else {
