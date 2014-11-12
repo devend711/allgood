@@ -1,4 +1,4 @@
-allgood
+[allgood](https://www.npmjs.org/package/allgood)
 ======
 
 Super lightweight JSON model validation for node.js
