@@ -22,7 +22,13 @@ module.exports = {
 		if (incorrect.length > 0) {
 			message.push("Incorrect values for keys: [" + incorrect.join(", ") + ']');
 		}
-		return message.join(", ");
+		return {message: message, missingKeys: missing, incorrectKeyValues: incorrect};
+	},
+
+	matchToSchema: function(schema, json) {
+		if(module.valid(schema, json)) {
+
+		}
 	}
 };
 

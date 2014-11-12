@@ -26,7 +26,7 @@ The keys in the schema are the keys you expect to find in the test object, and t
 
 ### Find errors in module
 
-Helpful feedback string about the problems with an invalid module.
+Helpful feedback string about the problems with an invalid model.
 	
 	problems = allgood.problems;
 
@@ -34,7 +34,10 @@ Helpful feedback string about the problems with an invalid module.
 	if (valid(personSchema, newPerson)) {
 		console.log("You're a wizard, Ron");
 	} else {
-		console.log(problems(personSchema, newPerson));
+		error = problems(personSchema, newPerson); // contains 'message', 'missingKeys', 'incorrectKeyValues'
+		console.log(error.message);
+		console.log('Missing ' + error.missingKeys);
+		console.log('Wrong type for ' + error.incorrectKeyValues);
 	}
 	
 

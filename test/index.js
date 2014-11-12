@@ -49,6 +49,7 @@ describe('#problems', function() {
   it('shows problems for simple model', function() {
     var personSchema = {"name":"string", "age":"number"};
     var newPerson = {"age":"11"};
-    (problems(personSchema, newPerson).length).should.be.above(1);
+    p = problems(personSchema, newPerson);
+    (p.message.length).should.be.above(1);
   });
 });
