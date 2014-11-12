@@ -9,7 +9,7 @@ Super lightweight JSON model validation for node.js
 
 ## Usage
 
-### Validate module
+### Validate a model
 
 A validation consists of a JSON object to test and a JSON schema, a definition of the model.
 
@@ -24,7 +24,7 @@ The keys in the schema are the keys you expect to find in the test object, and t
 		console.log("You're a wizard, Harry");
 	}
 
-### Find errors in module
+### Check why a model is invalid
 
 Helpful feedback string about the problems with an invalid model.
 	
